@@ -41,7 +41,7 @@ public class PracticaServ extends HttpServlet {
             out.println("<body>");
             out.println("<h1>" + request.getParameter("name") + "</h1>");
             out.println("<h1>" + request.getParameter("email") + "</h1>");
-            out.println("<h1>" + request.getParameter("contraseña") + "</h1>");
+            out.println("<h1>" + request.getParameter("contrasenia") + "</h1>");
             out.println("<h1>" + request.getParameter("bday") + "</h1>");
            
             out.println("</body>");
