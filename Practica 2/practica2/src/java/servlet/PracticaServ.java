@@ -32,20 +32,17 @@ public class PracticaServ extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
             /* TODO output your page here. You may use following sample code. */
-           String nombre = request.getParameter("name");
-            String correo = request.getParameter("email");
-            String contraseña = request.getParameter("contraseña");
-            String nacimiento = request.getParameter("bday");
+           
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
             out.println("<title>Servlet Servlet</title>");            
             out.println("</head>");
             out.println("<body>");
-            out.println("<h1>Hola " + nombre + "</h1>");
-            out.println("<h1>Tu correo es: " + correo + "</h1>");
-            out.println("<h1>Naciste el " + nacimiento + "</h1>");
-            out.println("<h1>La contraseña " + contraseña + "es correcta?</h1>");
+            out.println("<h1>" + request.getParameter("name") + "</h1>");
+            out.println("<h1>" + request.getParameter("email") + "</h1>");
+            out.println("<h1>" + request.getParameter("contraseña") + "</h1>");
+            out.println("<h1>" + request.getParameter("bday") + "</h1>");
            
             out.println("</body>");
             out.println("</html>");
