@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <link rel="stylesheet" href="CSS/Diseño.css" type="text/css"/>
+
+
+        <title>Practica 2</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+             <div class="nav">
+            <a href="#home">Home</a>
+            <a href="#noticias">Noticias</a>
+            <a href="#contactanos">Contactanos</a>
+            <a href="#nosotros">Sobre Nosotros</a>
+            <a href="#servicio">Servicio Al Cliente</a>
+		
+	<div class="nav-right">
+            <input type="text" placeholder="Search">
+	</div>
+
+	<div style="padding-left:12px"></div>
+		
+		
+	</div>
+	<div class="dropdown">
+            <button class="drop">Opciones</button>
+            <div class="droplist">
+                <a href="#">Perfil</a>
+                <a href="#">Configuración</a>
+                <a href="#">Notificación</a>
+                <a href="#">Idioma</a>
+            </div>
+	</div>	
+	<br>
+	<br>
+        
+        <h1 align="center">Login</h1>
+
+        
+        
+        
+        <form action="mainjsp.jsp" method= "POST">
+            Nombre:<br>
+            <input type="text" name="name"><br>
+            Email:<br>
+                <input type="email" name="email"><br>
+            Contraseña:<br>
+                <input type="password" name="contrasenia"><br>
+            Fecha de Nacimiento:<br>
+            <input type="date" name="bday"><br>
+                
+            <input type="submit" value="Enviar">
+            
+            
+            
+            
+        </form>
+    </body>
+</html>
